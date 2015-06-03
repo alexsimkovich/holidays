@@ -1,0 +1,31 @@
+/**
+* Starting styles
+**/
+
+body {
+  font-family: @font-source;
+  font-weight: normal;
+  font-size: 14px;
+  color: @color-black;
+  background-color: @color-white;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+p {
+  color: @color-gray;
+  font-weight: 300;
+}

@@ -1,0 +1,125 @@
+/**
+* Contacts styles
+**/
+
+.contacts {
+  padding-top: 55px;
+  padding-bottom: 55px;
+
+  .contacts_t {
+    position: relative;
+    font-size: 1.7em;
+    color: @color-black;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      height: 1px;
+      background-color: @color-green;
+    }
+  }
+
+  .contacts_data {
+    .contacts_box {
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid @color-border;
+
+      .contacts_icn {
+        display: inline-block;
+        vertical-align: middle;
+        width: 50px;
+        text-align: left;
+        
+        i {
+          font-size: 1.3em;
+          color: @color-green;
+        }
+      }
+
+      .contacts_information {
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(~'100% - 55px');
+
+        p {
+          color: @color-black;
+          margin-top: 5px;
+          margin-bottom: 5px;
+
+          span {
+            margin-left: 10px;
+            color: #999;
+          }
+
+          a {
+            color: @color-black;
+          }
+        }
+      }
+    }
+  }
+
+  .contats_schedule {
+    .contacts_ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 15px;
+        color: @color-white;
+
+        .contacts_info {
+          position: relative;
+
+          .contacts_l {
+            position: relative;
+            float: left;
+            width: calc(~'100% - 70px');
+            color: @color-black;
+            font-size: 1em;
+            font-weight: 300;
+            overflow: hidden;
+
+            &:after {
+              content: "";
+              position: absolute;
+              bottom: 4px;
+              width: 100%;
+              height: 1px;
+              border-top: 1px dashed #999;
+            }
+
+            &.__closed {
+              width: calc(~'100% - 50px');
+            }
+          }
+
+          .contacts_r {
+            float: right;
+            color: #999;
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts_data,
+  .contats_schedule {
+    margin-bottom: 25px;
+  }
+}

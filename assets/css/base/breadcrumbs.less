@@ -1,0 +1,40 @@
+/**
+* Breadcrumbs styles
+**/
+
+.breadcrumbs {
+  padding-top: 60px;
+  height: 180px;
+  background: url(../../../assets/images/breadcrumbs/gallery.jpg) no-repeat;
+  
+  .breadcrumbs_t {
+    font-size: 2.57em;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .breadcrumb {
+    background-color: transparent;
+    padding: 8px;
+
+    &>li {
+      &>a {
+        color: @color-gray;
+        font-weight: 300;
+      }
+
+      &.active {
+        color: @color-green;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .breadcrumbs {
+    display: none;
+  }
+}

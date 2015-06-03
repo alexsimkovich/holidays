@@ -1,0 +1,38 @@
+/**
+* Controls styles
+**/
+
+.form-control {
+  position: relative;
+  display: inline-block;
+  height: 48px;
+  border: 1px solid @color-border;
+  font-size: 1em;
+  font-weight: 300;
+  color: #999;
+  box-shadow: none;
+  border-radius: 0;
+
+  &.__date {
+    background: url(../../../assets/images/icons/calendar.png) no-repeat 96% center;
+  }
+
+  &.__time {
+    background: url(../../../assets/images/icons/clock.png) no-repeat 96% center;
+  }
+}
+
+.btn-search {
+  display: inline-block;
+  background-color: @color-green;
+  color: @color-white;
+  border-radius: 0 !important;
+  padding: 13px 18px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid @color-green;
+    color: #fff;
+    background-color: fade(@color-green, 80%);
+  }
+}

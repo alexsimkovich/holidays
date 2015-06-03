@@ -1,0 +1,35 @@
+/**
+* Headings styles
+**/
+
+.h2 {
+  position: relative;
+  padding-top: 25px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 2.14em;
+  font-weight: 300;
+  color: @color-black;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  text-align: center;
+
+  &:before {
+    font-family: Flaticon;
+    content: "\e002";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -9px;
+    font-size: 20px;
+    color: @color-black;
+  }
+
+  &.__white {
+    color: @color-white;
+
+    &:before {
+      color: @color-green;
+    }
+  }
+}

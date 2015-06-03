@@ -1,0 +1,90 @@
+/**
+* About us styles
+**/
+
+.about {
+  padding-top: 55px;
+  padding-bottom: 55px;
+
+  .about-block {
+    position: relative;
+    width: 620px;
+    text-align: center;
+    margin: 0 auto;
+
+    .about-img-left {
+      position: absolute;
+      top: 0;
+      left: -240px;
+      background: url(../../../assets/images/about/image1.png) no-repeat;
+      width: 212px;
+      height: 276px;
+    }
+
+    .about-img-right {
+      position: absolute;
+      right: -260px;
+      bottom: -30px;
+      background: url(../../../assets/images/about/image2.png) no-repeat;
+      width: 250px;
+      height: 166px;
+    }
+
+    .about_desc {
+      font-size: 1.3em;
+      font-weight: 300;
+      font-style: italic;
+      color: @color-gray;
+    }
+
+    .about_rait {
+      padding-top: 25px;
+      padding-bottom: 25px;
+
+      a {
+        .star {
+          &:before {
+            font-family: FontAwesome;
+            content: "\f006";
+            font-size: 1.2em;
+            color: #ffc619;
+            padding-left: 3px;
+            padding-right: 3px;
+          }
+
+          &._voted {
+            &:before {
+              content: "\f005";
+              color: #ffc619;
+            }
+          }
+        }
+
+        &:hover,
+        &:focus {
+          .star {
+            &:before {
+              content: "\f005";
+              color: #ffc619;
+            }
+          }
+        }
+      }
+    }
+
+    .about_info {
+      p {
+        margin-bottom: 20px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    .about-block {
+      width: auto;
+    }
+  }
+}

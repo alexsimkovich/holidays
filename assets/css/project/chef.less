@@ -1,0 +1,49 @@
+/**
+* Chef styles
+**/
+
+.chef {
+  padding-top: 15px;
+  border-bottom: 5px solid #cdd1c6;
+
+  .chef-block {
+    position: relative;
+
+    .chef-image {
+      background: url(../../../assets/images/chef/chef.png) no-repeat center bottom;
+      -webkit-background-size: cover;
+      background-size: cover;
+      width: 450px;
+      height: 400px;
+    }
+
+    .chef-info {
+      text-align: center;
+
+      img {
+        margin: 0 auto;
+      }
+
+      .chef-desc {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        p {
+          line-height: 30px;
+          color: @color-gray;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .chef {
+    .chef-block {
+      .chef-image {
+        margin: 0 auto;
+      }
+    }
+  }
+}

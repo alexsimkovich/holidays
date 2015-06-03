@@ -1,0 +1,41 @@
+/**
+* Dropdown menu restyling
+**/
+
+.dropdown-menu {
+  min-width: 220px;
+  right: auto;
+  left: 0;
+  top: 100%;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+  background-color: #fff;
+
+  & > li {
+    & > a {
+      display: block;
+      padding: 12px 15px;
+      color: #222;
+      border-top: 1px solid @color-border;
+      font-size: 13px;
+
+      &:hover,
+      &:focus {
+        background-color: @color-green;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .dropdown-menu {
+    & > li {
+      & > a {
+        padding: 15px 25px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+/**
+* Menu styles
+**/
+.menu {
+  padding-top: 55px;
+  padding-bottom: 55px;
+
+  .menu_box {
+    margin-bottom: 35px;
+
+    .menu_img {
+      text-align: center;
+
+      img {
+        margin: 0 auto;
+      }
+    }
+    
+    .menu-list {
+      position: relative;
+
+      .menu-list_smallimg {
+        position: absolute;
+        right: 0;
+        top: -30px;
+      }
+
+      .menu-list_t {
+        font-size: 1.7em;
+        color: @color-black;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+
+      .menu_ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          position: relative;
+          display: inline-block;
+          width: 100%;
+          margin-bottom: 20px;
+          color: @color-black;
+
+          .menu_t {
+            font-size: 1.3em;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+          }
+
+          .menu_info {
+            position: relative;
+
+            .menu_l {
+              position: relative;
+              float: left;
+              width: calc(~'100% - 52px');
+              color: #999;
+              font-size: 1em;
+              line-height: 18px;
+              font-weight: 300;
+              overflow: hidden;
+
+              &:after {
+                content: "";
+                position: absolute;
+                bottom: 3px;
+                width: 100%;
+                height: 1px;
+                border-top: 1px dashed #999;
+              }
+            }
+
+            .menu_r {
+              float: right;
+              color: @color-green;
+              font-size: 1.3em;
+              line-height: 14px;
+              font-weight: bold;
+              font-style: italic;
+            }
+          }
+        }
+      }
+
+      &.__l {
+        padding-right: 35px;
+      }
+
+      &.__r {
+        padding-left: 35px;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu {
+    .menu_box {
+      .menu-list {
+        &.__l {
+          padding-right: 0;
+        }
+
+        &.__r {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .menu {
+    .menu_box {
+      .menu-list {
+        &.__l {
+          padding-right: 0;
+        }
+
+        &.__r {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}

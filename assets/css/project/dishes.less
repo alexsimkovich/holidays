@@ -1,0 +1,83 @@
+/**
+* Dishes styles
+**/
+
+.dishes {
+  height: 520px;
+
+  .dishes-block {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(25, 24, 23, .75);
+  }
+
+  .dished_box {
+    margin-bottom: 27px;
+
+    .dishes_ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 20px;
+        color: @color-white;
+
+        .dishes_t {
+          font-size: 1.3em;
+          font-weight: 200;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+
+        .dishes_info {
+          position: relative;
+
+          .dishes_l {
+            position: relative;
+            float: left;
+            width: calc(~'100% - 52px');
+            color: #999;
+            font-size: 1em;
+            line-height: 18px;
+            font-weight: 300;
+            overflow: hidden;
+
+            &:after {
+              content: "";
+              position: absolute;
+              bottom: 3px;
+              width: 100%;
+              height: 1px;
+              border-top: 1px dashed #999;
+            }
+          }
+
+          .dishes_r {
+            float: right;
+            color: @color-green;
+            font-size: 1.3em;
+            line-height: 14px;
+            font-weight: bold;
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .dishes {
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .dishes {
+    height: auto;
+  }
+}
