@@ -12357,10 +12357,12 @@ p.testimonial-author {
 **/
 .dishes {
   height: 520px;
+  background: url(../../assets/images/dishes/slide.jpg) no-repeat 50% 50% fixed;
+  background-size: cover;
 }
 .dishes .dishes-block {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 55px;
   background-color: rgba(25, 24, 23, 0.75);
 }
 .dishes .dished_box {
@@ -12437,6 +12439,8 @@ p.testimonial-author {
 **/
 .banner {
   height: 170px;
+  background: url(../../assets/images/banner/1.jpg) no-repeat 50% 50% fixed;
+  background-size: cover;
 }
 .banner .banner-block {
   padding-top: 50px;

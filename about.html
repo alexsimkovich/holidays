@@ -119,7 +119,7 @@
     </section>
     <!-- /about -->
     <!-- banner -->
-    <section class="banner" data-parallax="scroll" data-image-src="assets/images/banner/1.jpg">
+    <section class="banner">
       <div class="banner-block">
         <div class="container">
           <div class="banner_l">
@@ -313,33 +313,7 @@
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="assets/js/vendor/bootstrap.js"></script>
-  <script src="assets/js/vendor/isotope.pkgd.js"></script>
-  <script src="assets/js/vendor/lightbox.min.js"></script>
-  <script src="assets/js/vendor/parallax.js"></script>
   <script src="assets/js/script.js"></script>
-  <script>
-    $(function(){
-
-
-      var $container = $('#galleryList').isotope({
-        itemSelector: '.gallery_li',
-        layoutMode: 'masonry'
-      });
-
-      $('.gallery_nav').on('click', 'a', function (ev) {
-        ev.preventDefault();
-        $(this).parent().find("a").removeClass("active");
-        $(this).addClass("active");
-
-        var filterValue = $(this).attr('data-filter');
-        $container.isotope({
-          filter: filterValue
-        });
-      });
-
-      $container.isotope('layout');
-    });
-  </script>
   <!-- /Scripts -->
 </body>
 </html>
